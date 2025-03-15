@@ -1,80 +1,98 @@
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Étudiant en Informatique</title>
+    <title>Jean Aimé Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    
 </head>
 <body>
 
-    <header>
-        <h1>RAKOTONIAINA Fanomezantsoa Jean Aimé</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">À Propos</a></li>
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="#skills">Compétences</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <img src="img.png" alt="Your Profile" class="profile-image">
+                <div class="header-text">
+                    <h1>RAKOTONIAINA Fanomezantsoa Jean Aimé</h1>
+                    <p>Développeur logiciel / web (backend)</p>
+                </div>
+                <nav>
+                    <div class="menu-icon">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <ul>
+                        <li><a href="#about">A propos</a></li>
+                        <li><a href="#projects">Projets</a></li>
+                        <li><a href="#skills">Compétences</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-    <section id="about">
-        <h2>À Propos de Moi</h2>
-        <img src="img.png" alt="Votre Photo">
-        <p>
-            Étudiant passionné en informatique, toujours à la recherche de nouvelles compétences et de défis du développement logiciel et le domaine du backend pour le développement web. 
-        </p>
-    </section>
+        <main>
+            <section id="about" class="animated-section">
+                <h2>A propos de moi</h2>
+                <div class="about-content">
+                    
+                    <p>
+                        Étudiant passionné en informatique, toujours à la recherche de nouvelles compétences et de défis du développement logiciel et le domaine du backend pour le développement web. 
+                    </p>
+                </div>
+            </section>
 
-    <section id="projects">
-        <h2>Projets</h2>
-        <div class="project">
-            <h3>Gestion des patients</h3>
-            <p>Un site web de gestion des patients dans un cabinet privé. Téchnologies utilisées: PHP et MySQL pour le backend; HTML, CSS et JS pour le frontend.</p>
-            <a href="https://github.com/JeanAime824/hopital" target="_blank">Voir le projet</a>
-        </div>
+            <section id="projects">
+                <h2>Projets</h2>
+                <div class="project">
+                    <h3>Gestion des patients</h3>
+                    <p>Un site web de gestion des patients dans un cabinet privé. Téchnologies utilisées: PHP et MySQL pour le backend; HTML, CSS et JS pour le frontend.</p>
+                    <a href="https://git@github.com/JeanAime824/hopital" target="_blank">Voir le projet</a>
+                </div>
+        
+                <div class="project">
+                    <h3>Gestion de vente des matériels informatique</h3>
+                    <p>Un logiciel de gestion de vente des matériels informatique. Téchnologies utilisées: VB.Net et SQLSERVER.</p>
+                    <a href="https://git@github.com/JeanAime824/gestion_de_vente" target="_blank">Voir le projet</a>
+                </div>
+        
+                <div class="project">
+                    <h3>Suivie des véhicules</h3>
+                    <p>Un site web de suivie des véhicules dans une entreprise provée. Téchnologies utilisées: PHP et MySQL pour le backend; HTML, CSS et JS pour le frontend.</p>
+                    <a href="https://git@github.com/JeanAime824/parc" target="_blank">Voir le projet</a>
+                </div>
+            </section>
 
-        <div class="project">
-            <h3>Gestion de vente des matériels informatique</h3>
-            <p>Un logiciel de gestion de vente des matériels informatique. Téchnologies utilisées: VB.Net et SQLSERVER.</p>
-            <a href="https://github.com/JeanAime824/gestion_de_vente" target="_blank">Voir le projet</a>
-        </div>
+            <section id="skills" class="animated-section">
+                <h2>Compétences</h2>
+                <div class="skills-grid">
+                    <ul>
+                        <li>Frontend: HTML 5, CSS 3, Javascript</li>
+                        <li>Backend: Python, C++, Java, VB.net, PHP</li>
+                        <li>Base de données: SQL, MySQL, PostgreSQL</li>
+                        <li>Frameworks: Django</li>
+                        <li>Système d'éxploitation: Windows, Linux</li>
+                    </ul>
+                </div>
+            </section>
 
-        <div class="project">
-            <h3>Suivie des véhicules</h3>
-            <p>Un site web de suivie des véhicules dans une entreprise provée. Téchnologies utilisées: PHP et MySQL pour le backend; HTML, CSS et JS pour le frontend.</p>
-            <a href="https://github.com/JeanAime824/parc" target="_blank">Voir le projet</a>
-        </div>
+            <section id="contact" class="animated-section">
+                <h2>Contact</h2>
+                <p>N'hésitez pas à me contacter</p>
+                <ul class="contact-list">
+                    <li>Email: <a href="#">rakotoniainafanomezantsoajeana@gmail.com</a></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/jean-aim%C3%A9-rakotoniaina-0586392a4/" target="_blank">Jean Aimé RAKOTONIAINA</a></li>
+                    <li>GitHub: <a href="https://git@github.com/JeanAime824" target="_blank">JeanAime824</a></li>
+                    <li>Facebook: <a href="https://www.facebook.com/profile.php?viewas=100000686899395&id=61560337090398" target="_blank">Jean Aimé II</a></li>
+                </ul>
+            </section>
+        </main>
 
-        <!-- Ajoutez d'autres projets ici -->
-    </section>
-
-    <section id="skills">
-        <h2>Compétences</h2>
-        <ul>
-            <li>Langages: Python, C++, VB.Net, PHP, JAVA</li>
-            <li>Base de données: SQL, MySQL, PostgreSQL</li>
-            <li>Frameworks: Django</li>
-            <!-- Ajoutez d'autres compétences -->
-        </ul>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>N'hésitez pas à me contacter :</p>
-        <ul>
-            <li>Email: rakotoniainafanomezantsoajeana@gmail.com</li>
-            <li>LinkedIn: Jean Aimé RAKOTONIAINA</li>
-            <li>GitHub: JeanAime824</li>
-            <li>Téléphone: 034 77 611 39 - 033 13 098 12</li>
-        </ul>
-    </section>
-
-    <footer>
-        <p>© 2025 RAKOTONIAINA Fanomezantsoa Jean Aimé</p>
-    </footer>
+        <footer>
+            <p>&copy; 2025 RAKOTONIAINA Fanomezantsoa Jean Aimé</p>
+        </footer>
+    </div>
     <script src="script.js" type="module"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
 </body>
 </html>

@@ -14,13 +14,35 @@ body {
 header {
     background-color: rgba(25, 25, 25, 0.9);
     color: #fff;
-    padding: 2rem 0;
+    padding: 1rem;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     position: sticky;
     top: 0;
     z-index: 100;
     backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.profile-image {
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid #64ffda;
+    box-shadow: 0 0 10px rgba(100, 255, 218, 0.6);
+    margin-right: 1rem;
+}
+
+.header-text {
+    text-align: left;
 }
 
 nav ul {
@@ -28,14 +50,14 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 nav a {
     color: #eee;
     text-decoration: none;
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 1rem;
     transition: color 0.3s ease, transform 0.3s ease;
     display: inline-block;
     position: relative;
@@ -216,4 +238,81 @@ h2 {
     border-bottom: 2px solid #64ffda;
     padding-bottom: 0.5rem;
     margin-bottom: 1.5rem;
+}
+
+/* Styles for smaller screens */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-image {
+        margin-bottom: 1rem;
+        margin-right: 0;
+    }
+
+    nav {
+        width: 100%; /* Take full width */
+    }
+
+    nav ul {
+        display: none; /* Hide the default nav list */
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li {
+        margin: 0.5rem 0;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 0.75rem;
+        border-bottom: 1px solid rgba(100, 255, 218, 0.3);
+    }
+
+    /* Style for the "sandwich" menu button */
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        padding: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 101;
+    }
+
+    .menu-icon .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px 0;
+        display: block;
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Rotate bars to create 'X' when menu is open */
+    .menu-icon.open .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-icon.open .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-icon.open .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -8px);
+    }
+
+    /* Show menu when open */
+    nav.open ul {
+        display: flex;
+        flex-direction: column;
+    }
 }
