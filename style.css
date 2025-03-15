@@ -198,6 +198,20 @@ footer {
     transform: translateY(-2px);
 }
 
+#contact .row{
+    display: flex;
+}
+
+#contact ul .icon {
+    color: white; 
+    font-size: 24px;
+    margin: 10px; 
+}
+
+#contact ul a{
+    margin-top: 8px;
+}
+
 canvas {
     position: fixed;
     top: 0;
