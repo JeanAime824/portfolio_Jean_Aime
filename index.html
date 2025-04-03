@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,12 +18,12 @@
                     <p>Développeur logiciel / web (backend)</p>
                 </div>
                 <nav>
-                    <div class="menu-icon">
+                    <div class="menu-icon" onclick="toggleMenu()">
                         <span class="bar"></span>
                         <span class="bar"></span>
                         <span class="bar"></span>
                     </div>
-                    <ul>
+                    <ul id="nav-links">
                         <li><a href="#about">À propos</a></li>
                         <li><a href="#projects">Projets</a></li>
                         <li><a href="#skills">Compétences</a></li>
@@ -34,14 +35,14 @@
 
         <main>
             <section id="about" class="animated-section">
-                <h2>À propos de moi</h2>                    
+                <h2>MON PROFIL</h2>                    
                 <p>
                     Étudiant passionné en informatique, toujours à la recherche de nouvelles compétences et de défis du développement logiciel et le domaine du backend pour le développement web. 
                 </p>
             </section>
 
             <section id="projects">
-                <h2>Projets</h2>
+                <h2>MES PROJETS</h2>
                 <div class="project">
                     <h3>Gestion des patients</h3>
                     <p>Un site web de gestion des patients dans un cabinet privé. Téchnologies utilisées: PHP et MySQL pour le backend; HTML, CSS et JS pour le frontend.</p>
@@ -62,20 +63,20 @@
             </section>
 
             <section id="skills" class="animated-section">
-                <h2>Compétences</h2>
+                <h2>MES COMPETENCES</h2>
                 <div class="skills-grid">
                     <ul>
                         <li>Frontend: HTML 5, CSS 3, Javascript</li>
                         <li>Backend: Python, C++, Java, VB.net, PHP</li>
                         <li>Base de données: SQL, MySQL, PostgreSQL</li>
                         <li>Frameworks: Django</li>
-                        <li>Système d'éxploitation: Windows, Linux</li>
+                        <li>Système d'exploitation: Windows, Linux</li>
                     </ul>
                 </div>
             </section>
 
             <section id="contact" class="animated-section">
-                <h2>Contact</h2>
+                <h2>MES CONTACTS</h2>
                 <p>N'hésitez pas à me contacter</p>
                 <ul class="contact-list">
                     <div class="row">
@@ -103,5 +104,11 @@
         </footer>
     </div>
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
