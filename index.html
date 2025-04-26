@@ -1,114 +1,424 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jean Aimé Portfolio</title>
+    <title>Jean Aimé - Développeur Informatique</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body>
-
-    <div class="container">
-        <header>
-            <div class="header-content">
-                <img src="image/img.png" alt="Profile" class="profile-image">
-                <div class="header-text">
-                    <h1>RAKOTONIAINA Fanomezantsoa Jean Aimé</h1>
-                    <p>Développeur logiciel / web (backend)</p>
-                </div>
-                <nav>
-                    <div class="menu-icon" onclick="toggleMenu()">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
+<body class="font-sans antialiased text-gray-800 bg-gray-50">
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="flex items-center">
+                    <div class="w-10 h-10 rounded-full gradient-bg flex items-center justify-center text-white font-bold text-xl">
+                        JA
                     </div>
-                    <ul id="nav-links">
-                        <li><a href="#about">À propos</a></li>
-                        <li><a href="#projects">Projets</a></li>
-                        <li><a href="#skills">Compétences</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+                    <span class="ml-3 text-xl font-bold">Jean <span class="gradient-text">Aimé</span></span>
+                </a>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#about" class="nav-link text-gray-600 hover:text-blue-600 font-medium">À propos</a>
+                    <a href="#skills" class="nav-link text-gray-600 hover:text-blue-600 font-medium">Compétences</a>
+                    <a href="#projects" class="nav-link text-gray-600 hover:text-blue-600 font-medium">Projets</a>
+                    <a href="#contact" class="nav-link text-gray-600 hover:text-blue-600 font-medium">Contact</a>
                 </nav>
+                
+                <button id="mobile-menu-button" class="md:hidden text-gray-600">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
             </div>
-        </header>
+            
+            <div id="mobile-menu" class="hidden md:hidden mt-4 py-4 border-t border-gray-200">
+                <a href="#about" class="block py-2 text-gray-600 hover:text-blue-600">À propos</a>
+                <a href="#skills" class="block py-2 text-gray-600 hover:text-blue-600">Compétences</a>
+                <a href="#projects" class="block py-2 text-gray-600 hover:text-blue-600">Projets</a>
+                <a href="#contact" class="block py-2 text-gray-600 hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </header>
 
-        <main>
-            <section id="about" class="animated-section">
-                <h2>MON PROFIL</h2>                    
-                <p>
-                    Étudiant passionné en informatique, toujours à la recherche de nouvelles compétences et de défis du développement logiciel et le domaine du backend pour le développement web. 
-                </p>
-            </section>
-
-            <section id="projects">
-                <h2>MES PROJETS</h2>
-                <div class="project">
-                    <h3>Gestion des patients</h3>
-                    <p>Un site web de gestion des patients dans un cabinet privé. Téchnologies utilisées: PHP et MySQL pour le backend; HTML, CSS et JS pour le frontend.</p>
-                    <a href="https://git@github.com/JeanAime824/hopital" target="_blank">Voir le projet</a>
+    <section class="py-20 px-4">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-12 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Bonjour, je suis <span class="gradient-text">Jean Aimé</span></h1>
+                <h2 class="text-2xl md:text-3xl font-medium text-gray-600 mb-6">Développeur Web et Logiciel</h2>
+                <p class="text-lg text-gray-600 mb-8">Étudiant passionné en informatique, toujours à la recherche de nouvelles compétences et de défis du développement logiciel et le domaine du backend pour le développement web. </p>
+                <div class="flex space-x-4">
+                    <a href="#contact" class="px-6 py-3 gradient-bg text-white rounded-lg font-medium hover:opacity-90 transition">Me contacter</a>
+                    <a href="#projects" class="px-6 py-3 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-100 transition">Voir mes projets</a>
                 </div>
-        
-                <div class="project">
-                    <h3>Gestion de vente des matériels informatique</h3>
-                    <p>Un logiciel de gestion de vente des matériels informatique. Téchnologies utilisées: VB.Net et SQLSERVER.</p>
-                    <a href="https://git@github.com/JeanAime824/gestion_de_vente" target="_blank">Voir le projet</a>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative w-64 h-64 md:w-80 md:h-80">
+                    <div class="absolute inset-0 bg-blue-100 rounded-full opacity-20 animate-float"></div>
+                    <div class="absolute inset-0 bg-blue-200 rounded-full opacity-20 animate-float" style="animation-delay: 0.5s;"></div>
+                    <div class="absolute inset-0 bg-blue-300 rounded-full opacity-20 animate-float" style="animation-delay: 1s;"></div>
+                    <img src="image/img.png" alt="Jean Aimé" class="relative w-full h-full object-cover rounded-full border-4 border-white shadow-lg">
                 </div>
-        
-                <div class="project">
-                    <h3>Suivie des véhicules</h3>
-                    <p>Un site web de suivie des véhicules dans une entreprise provée. Téchnologies utilisées: PHP et MySQL pour le backend; HTML, CSS et JS pour le frontend.</p>
-                    <a href="https://git@github.com/JeanAime824/parc" target="_blank">Voir le projet</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">À <span class="gradient-text">propos</span> de moi</h2>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
+                    <img src="image/img2.jpg" alt="Jean Aimé" class="w-64 h-64 rounded-full object-cover border-4 border-white shadow-lg">
                 </div>
-            </section>
-
-            <section id="skills" class="animated-section">
-                <h2>MES COMPETENCES</h2>
-                <div class="skills-grid">
-                    <ul>
-                        <li>Frontend: HTML 5, CSS 3, Javascript</li>
-                        <li>Backend: Python, C++, Java, VB.net, PHP</li>
-                        <li>Base de données: SQL, MySQL, PostgreSQL</li>
-                        <li>Frameworks: Django</li>
-                        <li>Système d'exploitation: Windows, Linux</li>
-                    </ul>
+                
+                <div class="md:w-2/3 md:pl-12">
+                    <p class="text-lg text-gray-700 mb-6">
+                        Passionné par le développement informatique depuis mon plus jeune âge, j'ai acquis au fil des années une expertise solide dans la création d'applications web et logiciel Mon objectif est de concevoir des solutions technologiques qui simplifient la vie des utilisateurs tout en étant esthétiques et performantes.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-white p-6 rounded-lg shadow-sm">
+                            <h3 class="font-bold text-lg mb-2 flex items-center">
+                                <i class="fas fa-graduation-cap text-blue-500 mr-2"></i> Formation
+                            </h3>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Licence en Informatique - ISIME Behoririka</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>DTS informatique - ISIME Behoririka</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Bacc série A2 - Lycée Fo Masin'i Jesoa Tsaramasay</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm">
+                            <h3 class="font-bold text-lg mb-2 flex items-center">
+                                <i class="fas fa-graduation-cap text-blue-500 mr-2"></i> Certificat
+                            </h3>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Certification Javascript - Univers informatique Andravoahangy</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Certification Réseaux informatique - Univers informatique Andravoahangy</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Certification en ligne - Bakeli tech </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
 
-            <section id="contact" class="animated-section">
-                <h2>MES CONTACTS</h2>
-                <p>N'hésitez pas à me contacter</p>
-                <ul class="contact-list">
-                    <div class="row">
-                        <div class="col1"><i class="fas fa-envelope icon"></i></div>
-                        <div class="col2"><a href="#">rakotoniainafanomezantsoajeana@gmail.com</a></div>
+    <section id="skills" class="py-20 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Mes <span class="gradient-text">compétences</span></h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-3">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3 class="font-bold text-lg">Frontend</h3>
                     </div>
-                    <div class="row">
-                        <div class="col1"><i class="fab fa-linkedin icon"></i></div>
-                        <div class="col2"><a href="https://www.linkedin.com/in/jean-aim%C3%A9-rakotoniaina-0586392a4/" target="_blank">Jean Aimé RAKOTONIAINA</a></div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm transition">HTML5</span>
+                        <span class="skill-badge bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm transition">CSS3</span>
+                        <span class="skill-badge bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm transition">JavaScript</span>
                     </div>
-                    <div class="row">
-                        <div class="col1"><i class="fab fa-github icon"></i></div>
-                        <div class="col2"><a href="https://git@github.com/JeanAime824" target="_blank">JeanAime824</a></div>
+                </div>                
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 mr-3">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3 class="font-bold text-lg">Backend</h3>
                     </div>
-                    <div class="row">
-                        <div class="col1"><i class="fab fa-facebook icon"></i></div>
-                        <div class="col2"><a href="https://www.facebook.com/profile.php?viewas=100000686899395&id=61560337090398" target="_blank">Jean Aimé II</a></div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm transition">Python</span>
+                        <span class="skill-badge bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm transition">Django</span>
+                        <span class="skill-badge bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm transition">PHP</span>
+                        <span class="skill-badge bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm transition">Java</span>
+                        <span class="skill-badge bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm transition">VB.net</span>
                     </div>
-                </ul>
-            </section>
-        </main>
+                </div>                
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600 mr-3">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3 class="font-bold text-lg">Bases de données</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm transition">PostgreSQL</span>
+                        <span class="skill-badge bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm transition">MySQL</span>
+                        <span class="skill-badge bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm transition">SQLServer</span>
+                    </div>
+                </div>                
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-yellow-100 flex items-center justify-center text-yellow-600 mr-3">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3 class="font-bold text-lg">Autres</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm transition">Git</span>
+                        <span class="skill-badge bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm transition">Figma</span>
+                        <span class="skill-badge bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm transition">Bureautique</span>
+                        <span class="skill-badge bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm transition">Multimédia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <footer>
-            <p>&copy; 2025 RAKOTONIAINA Fanomezantsoa Jean Aimé</p>
-        </footer>
-    </div>
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script>
-        function toggleMenu() {
-            const navLinks = document.getElementById('nav-links');
-            navLinks.classList.toggle('active');
-        }
-    </script>
+    <section id="projects" class="py-20 px-4 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Mes <span class="gradient-text">projets</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="image/patient.png" alt="Projet 1" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Gestion des patients</h3>
+                        <p class="text-gray-600 mb-4">L'application permet aux praticiens et au personnel administratif de suivre efficacement les informations des patients, leurs consultations, leurs rendez-vous, ainsi que l’historique médical.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">PHP</span>
+                            <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs">HTML - CSS</span>
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">MySQL</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="https://github.com/JeanAime824/hopital" class="text-blue-600 hover:text-blue-800">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="text-blue-600 hover:text-blue-800">
+                                <i class="fas fa-external-link-alt"></i> Live
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="image/vente.jpg" alt="Projet 2" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Gestion de vente des matériels informatique</h3>
+                        <p class="text-gray-600 mb-4">Création d'un logiciel de gestion destiné aux boutiques de vente de matériels informatiques. L'application facilite la gestion des stocks, des ventes, des clients et des factures de manière rapide et efficace.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">VB.net</span>
+                            <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs">SQLServer</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="https://github.com/JeanAime824/gestion_de_vente" class="text-blue-600 hover:text-blue-800">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="text-blue-600 hover:text-blue-800">
+                                <i class="fas fa-external-link-alt"></i> Live
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="image/vehicule.jpg" alt="Projet 3" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Suivie des véhicules</h3>
+                        <p class="text-gray-600 mb-4">Développement d’un site web de gestion et de suivi des véhicules appartenant à une entreprise privée. L’application permet de centraliser les informations liées à l’entretien, l'utilisation et la disponibilité de chaque véhicule.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">PHP</span>
+                            <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs">HTML - CSS</span>
+                            <span class="bg-yellow-100 text-red-800 px-2 py-1 rounded-full text-xs">MySQL</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="https://github.com/JeanAime824/parc" class="text-blue-600 hover:text-blue-800">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="text-blue-600 hover:text-blue-800">
+                                <i class="fas fa-external-link-alt"></i> Live
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="https://github.com/JeanAime824" class="px-6 py-3 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-200 transition inline-flex items-center">
+                    <i class="fab fa-github mr-2"></i> Voir plus sur GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 px-4">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl font-bold text-center mb-12">Me <span class="gradient-text">contacter</span></h2>
+            
+            <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 gradient-bg text-white p-8">
+                        <h3 class="text-2xl font-bold mb-6">Informations de contact</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="text-white mr-4 mt-1">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Email</h4>
+                                    <p>rakotoniainafanomezantsoajeana@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="text-white mr-4 mt-1">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Téléphone</h4>
+                                    <p>034 77 611 39</p>
+                                    <p>033 13 098 12</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="text-white mr-4 mt-1">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Localisation</h4>
+                                    <p>III D 10 Bis Antaniavo, Ankazomanga</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-medium mb-4">Réseaux sociaux</h4>
+                            <div class="flex space-x-4">
+                                <a href="https://www.linkedin.com/in/jean-aim%C3%A9-rakotoniaina-0586392a4/" class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-opacity-30 transition">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://github.com/JeanAime824" class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-opacity-30 transition">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.facebook.com/profile.php?viewas=100000686899395&id=61560337090398" class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-opacity-30 transition">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <!-- <a href="#" class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-opacity-30 transition">
+                                    <i class="fab fa-instagram"></i>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2 p-8">
+                        <h3 class="text-2xl font-bold mb-6">Envoyez-moi un message</h3>
+                        
+                        <form id="contact-form" class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nom complet</label>
+                                <input 
+                                    type="text" 
+                                    id="name" 
+                                    required
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                    placeholder="Votre nom"
+                                >
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    required
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                    placeholder="Votre email"
+                                >
+                            </div>
+                            
+                            <div>
+                                <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Sujet</label>
+                                <input 
+                                    type="text" 
+                                    id="subject" 
+                                    required
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                    placeholder="Sujet du message"
+                                >
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                                <textarea 
+                                    id="message" 
+                                    rows="4"
+                                    required
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                    placeholder="Votre message..."
+                                ></textarea>
+                            </div>
+                            
+                            <button 
+                                type="submit" 
+                                class="w-full gradient-bg text-white font-medium py-3 px-4 rounded-lg hover:opacity-90 transition"
+                            >
+                                Envoyer le message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12 px-4">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="#" class="flex items-center">
+                        <div class="w-10 h-10 rounded-full gradient-bg flex items-center justify-center text-white font-bold text-xl">
+                            JA
+                        </div>
+                        <span class="ml-3 text-xl font-bold">Jean Aimé</span>
+                    </a>
+                    <p class="mt-2 text-gray-400">Développeur informatique passionné par la création de solutions innovantes.</p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="https://www.linkedin.com/in/jean-aim%C3%A9-rakotoniaina-0586392a4/" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-linkedin-in text-xl"></i>
+                    </a>
+                    <a href="https://github.com/JeanAime824" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?viewas=100000686899395&id=61560337090398" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-facebook text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
