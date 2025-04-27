@@ -28,7 +28,6 @@ const contactForm = document.getElementById('contact-form');
 contactForm.addEventListener('submit', function(e) {
     e.preventDefault();
     
-    // Get form values
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const subject = document.getElementById('subject').value;
@@ -39,7 +38,6 @@ contactForm.addEventListener('submit', function(e) {
     contactForm.reset();
 });
 
-// Scroll animation
 window.addEventListener('scroll', revealOnScroll);
 
 function revealOnScroll() {
@@ -56,5 +54,4 @@ function revealOnScroll() {
     });
 }
 
-// Initialisation de scroll
 revealOnScroll();
