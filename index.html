@@ -21,6 +21,7 @@
                 
                 <nav class="hidden md:flex space-x-8">
                     <a href="#about" class="nav-link text-gray-600 hover:text-blue-600 font-medium">À propos</a>
+                    <a href="#experience" class="nav-link text-gray-600 hover:text-blue-600 font-medium">Expérience</a>
                     <a href="#skills" class="nav-link text-gray-600 hover:text-blue-600 font-medium">Compétences</a>
                     <a href="#projects" class="nav-link text-gray-600 hover:text-blue-600 font-medium">Projets</a>
                     <!-- <a href="#contact" class="nav-link text-gray-600 hover:text-blue-600 font-medium">Contact</a> -->
@@ -33,6 +34,7 @@
             
             <div id="mobile-menu" class="hidden md:hidden mt-4 py-4 border-t border-gray-200">
                 <a href="#about" class="block py-2 text-gray-600 hover:text-blue-600">À propos</a>
+                <a href="#experience" class="block py-2 text-gray-600 hover:text-blue-600">Expérience</a>
                 <a href="#skills" class="block py-2 text-gray-600 hover:text-blue-600">Compétences</a>
                 <a href="#projects" class="block py-2 text-gray-600 hover:text-blue-600">Projets</a>
                 <a href="#contact" class="block py-2 text-gray-600 hover:text-blue-600">Contact</a>
@@ -72,7 +74,7 @@
                 
                 <div class="md:w-2/3 md:pl-12">
                     <p class="text-lg text-gray-700 mb-6">
-                        Passionné par le développement informatique depuis mon plus jeune âge, j'ai acquis au fil des années une expertise solide dans la création d'applications web et logiciel Mon objectif est de concevoir des solutions technologiques qui simplifient la vie des utilisateurs tout en étant esthétiques et performantes.
+                        Passionné par le développement informatique depuis mon plus jeune âge, j'ai acquis au fil des années une expertise solide dans la création d'applications web et logiciel. Mon objectif est de concevoir des solutions technologiques qui simplifient la vie des utilisateurs tout en étant esthétiques et performantes.
                     </p>
                     
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -102,7 +104,7 @@
                             <ul class="space-y-2">
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                                    <span>Certification Javascript - Univers informatique Andravoahangy</span>
+                                    <span>Certification JavaScript - Univers informatique Andravoahangy</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
@@ -115,6 +117,30 @@
                             </ul>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-20 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Mon <span class="gradient-text">expérience</span> professionnelle</h2>
+
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-white p-8 rounded-lg shadow-md border-l-4 border-blue-500 relative">
+                    <div class="absolute -left-3 top-10 w-6 h-6 bg-blue-500 rounded-full border-4 border-white shadow"></div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold">Administrateur système et réseaux</h3>
+                            <p class="text-blue-600 font-medium">Trace Mada</p>
+                        </div>
+                        <div class="mt-2 md:mt-0 px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
+                            Décembre 2025 - Présent
+                        </div>
+                    </div>
+                    <p class="text-gray-700">
+                        Gestion et maintenance de l'infrastructure informatique, configuration des équipements réseaux, administration des serveurs et support technique aux utilisateurs.
+                    </p>
                 </div>
             </div>
         </div>
@@ -177,6 +203,20 @@
                         <span class="skill-badge bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm transition">SQLServer</span>
                     </div>
                 </div>                
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 mr-3">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3 class="font-bold text-lg">Systèmes & Réseaux</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm transition">Administration Serveurs</span>
+                        <span class="skill-badge bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm transition">Config Réseaux</span>
+                        <span class="skill-badge bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm transition">Sécurité</span>
+                        <span class="skill-badge bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm transition">Virtualisation</span>
+                    </div>
+                </div>
                 <div class="bg-white p-6 rounded-lg shadow-sm">
                     <div class="flex items-center mb-4">
                         <div class="w-10 h-10 rounded-full bg-yellow-100 flex items-center justify-center text-yellow-600 mr-3">
@@ -250,7 +290,7 @@
                         <img src="image/vehicule.jpg" alt="Projet 3" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Suivie des véhicules</h3>
+                        <h3 class="text-xl font-bold mb-2">Suivi des véhicules</h3>
                         <p class="text-gray-600 mb-4">Développement d’un site web de gestion et de suivi des véhicules appartenant à une entreprise privée. L’application permet de centraliser les informations liées à l’entretien, l'utilisation et la disponibilité de chaque véhicule.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">PHP</span>
