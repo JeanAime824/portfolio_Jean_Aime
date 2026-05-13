@@ -4,50 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jean Aimé - Développeur Informatique</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="font-sans antialiased text-gray-800 bg-gray-50">
-    <header class="bg-white shadow-sm sticky top-0 z-50">
+<body class="font-inter antialiased text-slate-100 bg-slate-950">
+    <header class="glass-effect sticky top-0 z-50 border-b border-white/10">
         <div class="container mx-auto px-4 py-4">
             <div class="flex justify-between items-center">
                 <a href="#" class="flex items-center">
-                    <div class="w-10 h-10 rounded-full gradient-bg flex items-center justify-center text-white font-bold text-xl">
+                    <div class="w-10 h-10 rounded-full gradient-bg flex items-center justify-center text-white font-bold text-xl shadow-neon">
                         JA
                     </div>
-                    <span class="ml-3 text-xl font-bold">Jean <span class="gradient-text">Aimé</span></span>
+                    <span class="ml-3 text-xl font-bold font-orbitron tracking-wider">Jean <span class="gradient-text">Aimé</span></span>
                 </a>
                 
                 <nav class="hidden md:flex space-x-8">
-                    <a href="#about" class="nav-link text-gray-600 hover:text-blue-600 font-medium">À propos</a>
-                    <a href="#experience" class="nav-link text-gray-600 hover:text-blue-600 font-medium">Expérience</a>
-                    <a href="#skills" class="nav-link text-gray-600 hover:text-blue-600 font-medium">Compétences</a>
-                    <a href="#projects" class="nav-link text-gray-600 hover:text-blue-600 font-medium">Projets</a>
-                    <!-- <a href="#contact" class="nav-link text-gray-600 hover:text-blue-600 font-medium">Contact</a> -->
+                    <a href="#about" class="nav-link text-slate-400 hover:text-white font-medium transition-colors">À propos</a>
+                    <a href="#experience" class="nav-link text-slate-400 hover:text-white font-medium transition-colors">Expérience</a>
+                    <a href="#skills" class="nav-link text-slate-400 hover:text-white font-medium transition-colors">Compétences</a>
+                    <a href="#projects" class="nav-link text-slate-400 hover:text-white font-medium transition-colors">Projets</a>
+                    <a href="#contact" class="nav-link text-slate-400 hover:text-white font-medium transition-colors">Contact</a>
                 </nav>
                 
-                <button id="mobile-menu-button" class="md:hidden text-gray-600">
+                <button id="mobile-menu-button" class="md:hidden text-slate-100">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
             
-            <div id="mobile-menu" class="hidden md:hidden mt-4 py-4 border-t border-gray-200">
-                <a href="#about" class="block py-2 text-gray-600 hover:text-blue-600">À propos</a>
-                <a href="#experience" class="block py-2 text-gray-600 hover:text-blue-600">Expérience</a>
-                <a href="#skills" class="block py-2 text-gray-600 hover:text-blue-600">Compétences</a>
-                <a href="#projects" class="block py-2 text-gray-600 hover:text-blue-600">Projets</a>
-                <a href="#contact" class="block py-2 text-gray-600 hover:text-blue-600">Contact</a>
+            <div id="mobile-menu" class="hidden md:hidden mt-4 py-4 border-t border-white/10">
+                <a href="#about" class="block py-2 text-slate-400 hover:text-white transition-colors">À propos</a>
+                <a href="#experience" class="block py-2 text-slate-400 hover:text-white transition-colors">Expérience</a>
+                <a href="#skills" class="block py-2 text-slate-400 hover:text-white transition-colors">Compétences</a>
+                <a href="#projects" class="block py-2 text-slate-400 hover:text-white transition-colors">Projets</a>
+                <a href="#contact" class="block py-2 text-slate-400 hover:text-white transition-colors">Contact</a>
             </div>
         </div>
     </header>
 
-    <section class="py-20 px-4">
-        <div class="container mx-auto flex flex-col md:flex-row items-center">
+    <section class="py-20 px-4 relative overflow-hidden">
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-blue-600/20 rounded-full blur-[100px]"></div>
+        <div class="absolute top-1/2 -right-24 w-96 h-96 bg-purple-600/20 rounded-full blur-[100px]"></div>
+
+        <div class="container mx-auto flex flex-col md:flex-row items-center relative z-10">
             <div class="md:w-1/2 mb-12 md:mb-0">
-                <h1 class="text-4xl md:text-5xl font-bold mb-4">Bonjour, je suis <span class="gradient-text">Jean Aimé</span></h1>
-                <h2 class="text-2xl md:text-3xl font-medium text-gray-600 mb-6">Développeur Web et Logiciel</h2>
-                <p class="text-lg text-gray-600 mb-8">Étudiant passionné en informatique, toujours à la recherche de nouvelles compétences et de défis du développement logiciel et le domaine du backend pour le développement web. </p>
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 font-orbitron">Bonjour, je suis <span class="gradient-text">Jean Aimé</span></h1>
+                <h2 class="text-2xl md:text-3xl font-medium text-slate-400 mb-6 tracking-wide">Développeur Web et Logiciel</h2>
+                <p class="text-lg text-slate-300 mb-8 max-w-xl">Étudiant passionné en informatique, toujours à la recherche de nouvelles compétences et de défis du développement logiciel et le domaine du backend pour le développement web. </p>
                 <div class="flex space-x-4">
                     <a href="image/CV_Fanomezantsoa Jean Aimé_RAKOTONIAINA.pdf" class="px-6 py-3 gradient-bg text-white rounded-lg font-medium hover:opacity-90 transition hover:scale-105" target="_blank">Télécharger mon CV</a>
                 </div>
@@ -63,56 +69,59 @@
         </div>
     </section>
 
-    <section id="about" class="py-20 px-4 bg-gray-100">
+    <section id="about" class="py-20 px-4 bg-slate-900/50">
         <div class="container mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-12">À <span class="gradient-text">propos</span> de moi</h2>
+            <h2 class="text-3xl font-bold text-center mb-12 font-orbitron">À <span class="gradient-text">propos</span> de moi</h2>
             
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
-                    <img src="image/img2.png" alt="Jean Aimé" class="w-64 h-64 rounded-full object-cover border-4 border-white shadow-lg">
+                    <div class="relative">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full blur opacity-75"></div>
+                        <img src="image/img2.png" alt="Jean Aimé" class="relative w-64 h-64 rounded-full object-cover border-2 border-white/20 shadow-2xl">
+                    </div>
                 </div>
                 
                 <div class="md:w-2/3 md:pl-12">
-                    <p class="text-lg text-gray-700 mb-6">
+                    <p class="text-lg text-slate-300 mb-6">
                         Passionné par le développement informatique depuis mon plus jeune âge, j'ai acquis au fil des années une expertise solide dans la création d'applications web et logiciel. Mon objectif est de concevoir des solutions technologiques qui simplifient la vie des utilisateurs tout en étant esthétiques et performantes.
                     </p>
                     
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div class="bg-white p-6 rounded-lg shadow-sm">
-                            <h3 class="font-bold text-lg mb-2 flex items-center">
-                                <i class="fas fa-graduation-cap text-blue-500 mr-2"></i> Formation
+                        <div class="glass-card p-6 rounded-xl border border-white/10">
+                            <h3 class="font-bold text-lg mb-4 flex items-center text-white font-orbitron">
+                                <i class="fas fa-graduation-cap text-blue-400 mr-2"></i> Formation
                             </h3>
-                            <ul class="space-y-2">
+                            <ul class="space-y-3">
                                 <li class="flex items-start">
-                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                                    <span>Licence en Informatique - ISIME Behoririka</span>
+                                    <i class="fas fa-caret-right text-blue-400 mt-1 mr-2"></i>
+                                    <span class="text-slate-300">Licence en Informatique - ISIME Behoririka</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                                    <span>DTS informatique - ISIME Behoririka</span>
+                                    <i class="fas fa-caret-right text-blue-400 mt-1 mr-2"></i>
+                                    <span class="text-slate-300">DTS informatique - ISIME Behoririka</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                                    <span>Bacc série A2 - Lycée Fo Masin'i Jesoa Tsaramasay</span>
+                                    <i class="fas fa-caret-right text-blue-400 mt-1 mr-2"></i>
+                                    <span class="text-slate-300">Bacc série A2 - Lycée Fo Masin'i Jesoa Tsaramasay</span>
                                 </li>
                             </ul>
                         </div>
-                        <div class="bg-white p-6 rounded-lg shadow-sm">
-                            <h3 class="font-bold text-lg mb-2 flex items-center">
-                                <i class="fas fa-graduation-cap text-blue-500 mr-2"></i> Certificat
+                        <div class="glass-card p-6 rounded-xl border border-white/10">
+                            <h3 class="font-bold text-lg mb-4 flex items-center text-white font-orbitron">
+                                <i class="fas fa-certificate text-purple-400 mr-2"></i> Certificat
                             </h3>
-                            <ul class="space-y-2">
+                            <ul class="space-y-3">
                                 <li class="flex items-start">
-                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                                    <span>Certification JavaScript - Univers informatique Andravoahangy</span>
+                                    <i class="fas fa-caret-right text-purple-400 mt-1 mr-2"></i>
+                                    <span class="text-slate-300">Certification JavaScript - Univers informatique Andravoahangy</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                                    <span>Certification Réseaux informatique - Univers informatique Andravoahangy</span>
+                                    <i class="fas fa-caret-right text-purple-400 mt-1 mr-2"></i>
+                                    <span class="text-slate-300">Certification Réseaux informatique - Univers informatique Andravoahangy</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                                    <span>Certification en ligne - Bakeli tech </span>
+                                    <i class="fas fa-caret-right text-purple-400 mt-1 mr-2"></i>
+                                    <span class="text-slate-300">Certification en ligne - Bakeli tech </span>
                                 </li>
                             </ul>
                         </div>
@@ -122,23 +131,23 @@
         </div>
     </section>
 
-    <section id="experience" class="py-20 px-4">
+    <section id="experience" class="py-20 px-4 bg-slate-950">
         <div class="container mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-12">Mon <span class="gradient-text">expérience</span> professionnelle</h2>
+            <h2 class="text-3xl font-bold text-center mb-12 font-orbitron">Mon <span class="gradient-text">expérience</span> professionnelle</h2>
 
             <div class="max-w-3xl mx-auto">
-                <div class="bg-white p-8 rounded-lg shadow-md border-l-4 border-blue-500 relative">
-                    <div class="absolute -left-3 top-10 w-6 h-6 bg-blue-500 rounded-full border-4 border-white shadow"></div>
-                    <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                <div class="glass-card p-8 rounded-2xl border border-white/10 relative overflow-hidden group">
+                    <div class="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-blue-600 to-purple-600"></div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4 relative z-10">
                         <div>
-                            <h3 class="text-xl font-bold">Administrateur système et réseaux</h3>
-                            <p class="text-blue-600 font-medium">Trace Mada</p>
+                            <h3 class="text-xl font-bold text-white font-orbitron">Administrateur système et réseaux</h3>
+                            <p class="text-blue-400 font-medium tracking-wide">Trace Mada</p>
                         </div>
-                        <div class="mt-2 md:mt-0 px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
+                        <div class="mt-2 md:mt-0 px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium border border-blue-500/30">
                             Décembre 2025 - Présent
                         </div>
                     </div>
-                    <p class="text-gray-700">
+                    <p class="text-slate-400 relative z-10">
                         Gestion et maintenance de l'infrastructure informatique, configuration des équipements réseaux, administration des serveurs et support technique aux utilisateurs.
                     </p>
                 </div>
@@ -146,238 +155,232 @@
         </div>
     </section>
 
-    <section id="skills" class="py-20 px-4">
+    <section id="skills" class="py-20 px-4 bg-slate-900/50">
         <div class="container mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-12">Mes <span class="gradient-text">compétences</span></h2>
+            <h2 class="text-3xl font-bold text-center mb-12 font-orbitron">Mes <span class="gradient-text">compétences</span></h2>
             
             <div class="grid grid-cols-2 max-sm:grid-cols-1 lg:grid-cols-4 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow-sm">
+                <div class="glass-card p-6 rounded-xl border border-white/10 group hover:border-blue-500/50 transition-all">
                     <div class="flex items-center mb-4">
-                        <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-3">
+                        <div class="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 mr-3 shadow-neon-blue">
                             <i class="fas fa-laptop-code"></i>
                         </div>
-                        <h3 class="font-bold text-lg">Frontend</h3>
+                        <h3 class="font-bold text-lg text-white font-orbitron">Frontend</h3>
                     </div>
-                    <div class="flex flex-wrap gap-3">
-                        <span class="skill-badge bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm transition">Html 5</span>
-                        <span class="skill-badge bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm transition">CSS 3</span>
-                        <span class="skill-badge bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm transition">JavaScript</span>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge bg-blue-500/10 text-blue-300 border border-blue-500/20 px-3 py-1 rounded-full text-sm transition">HTML 5</span>
+                        <span class="skill-badge bg-blue-500/10 text-blue-300 border border-blue-500/20 px-3 py-1 rounded-full text-sm transition">CSS 3</span>
+                        <span class="skill-badge bg-blue-500/10 text-blue-300 border border-blue-500/20 px-3 py-1 rounded-full text-sm transition">JavaScript</span>
                     </div>
                 </div>                
-                <div class="bg-white p-6 rounded-lg shadow-sm">
+                <div class="glass-card p-6 rounded-xl border border-white/10 group hover:border-purple-500/50 transition-all">
                     <div class="flex items-center mb-4">
-                        <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 mr-3">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center text-purple-400 mr-3 shadow-neon-purple">
                             <i class="fas fa-server"></i>
                         </div>
-                        <h3 class="font-bold text-lg">Backend</h3>
+                        <h3 class="font-bold text-lg text-white font-orbitron">Backend</h3>
                     </div>
                     <div class="flex flex-wrap gap-2">
-                        <span class="skill-badge bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm transition">Python</span>
-                        <span class="skill-badge bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm transition">PHP</span>
-                        <span class="skill-badge bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm transition">Java</span>
-                        <span class="skill-badge bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm transition">VB.net</span>
+                        <span class="skill-badge bg-purple-500/10 text-purple-300 border border-purple-500/20 px-3 py-1 rounded-full text-sm transition">Python</span>
+                        <span class="skill-badge bg-purple-500/10 text-purple-300 border border-purple-500/20 px-3 py-1 rounded-full text-sm transition">PHP</span>
+                        <span class="skill-badge bg-purple-500/10 text-purple-300 border border-purple-500/20 px-3 py-1 rounded-full text-sm transition">Java</span>
+                        <span class="skill-badge bg-purple-500/10 text-purple-300 border border-purple-500/20 px-3 py-1 rounded-full text-sm transition">VB.net</span>
                     </div>
                 </div>         
-                <div class="bg-white p-6 rounded-lg shadow-sm">
+                <div class="glass-card p-6 rounded-xl border border-white/10 group hover:border-red-500/50 transition-all">
                     <div class="flex items-center mb-4">
-                        <div class="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center text-red-600 mr-3">
-                            <i class="fas fa-project-diagram"></i> 
+                        <div class="w-10 h-10 rounded-full bg-red-500/20 flex items-center justify-center text-red-400 mr-3 shadow-neon-red">
+                            <i class="fas fa-brain"></i>
                         </div>
-                        <h3 class="font-bold text-lg">Framework</h3>
-                    </div>
-                    <div class="flex flex-wrap gap-3">
-                        <span class="skill-badge bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm transition">TailWind CSS</span>
-                        <span class="skill-badge bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm transition" >Django</span>
-                    </div>
-                </div>                
-                <div class="bg-white p-6 rounded-lg shadow-sm">
-                    <div class="flex items-center mb-4">
-                        <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600 mr-3">
-                            <i class="fas fa-database"></i>
-                        </div>
-                        <h3 class="font-bold text-lg">Bases de données</h3>
+                        <h3 class="font-bold text-lg text-white font-orbitron">IA</h3>
                     </div>
                     <div class="flex flex-wrap gap-2">
-                        <span class="skill-badge bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm transition">PostgreSQL</span>
-                        <span class="skill-badge bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm transition">MySQL</span>
-                        <span class="skill-badge bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm transition">SQLServer</span>
-                    </div>
-                </div>                
-                <div class="bg-white p-6 rounded-lg shadow-sm">
-                    <div class="flex items-center mb-4">
-                        <div class="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 mr-3">
-                            <i class="fas fa-network-wired"></i>
-                        </div>
-                        <h3 class="font-bold text-lg">Systèmes & Réseaux</h3>
-                    </div>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-badge bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm transition">Administration Serveurs</span>
-                        <span class="skill-badge bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm transition">Config Réseaux</span>
-                        <span class="skill-badge bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm transition">Sécurité</span>
-                        <span class="skill-badge bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm transition">Virtualisation</span>
+                        <span class="skill-badge bg-red-500/10 text-red-300 border border-red-500/20 px-3 py-1 rounded-full text-sm transition">Machine Learning</span>
+                        <span class="skill-badge bg-red-500/10 text-red-300 border border-red-500/20 px-3 py-1 rounded-full text-sm transition" >Deep Learning</span>
+                        <span class="skill-badge bg-red-500/10 text-red-300 border border-red-500/20 px-3 py-1 rounded-full text-sm transition" >NLP</span>
                     </div>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm">
+                <div class="glass-card p-6 rounded-xl border border-white/10 group hover:border-orange-500/50 transition-all">
                     <div class="flex items-center mb-4">
-                        <div class="w-10 h-10 rounded-full bg-yellow-100 flex items-center justify-center text-yellow-600 mr-3">
-                            <i class="fas fa-tools"></i>
+                        <div class="w-10 h-10 rounded-full bg-orange-500/20 flex items-center justify-center text-orange-400 mr-3 shadow-neon-orange">
+                            <i class="fas fa-project-diagram"></i> 
                         </div>
-                        <h3 class="font-bold text-lg">Autres</h3>
+                        <h3 class="font-bold text-lg text-white font-orbitron">Framework</h3>
                     </div>
                     <div class="flex flex-wrap gap-2">
-                        <span class="skill-badge bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm transition">Git</span>
-                        <span class="skill-badge bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm transition">Figma</span>
-                        <span class="skill-badge bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm transition">Bureautique</span>
-                        <span class="skill-badge bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm transition">Multimédia</span>
+                        <span class="skill-badge bg-orange-500/10 text-orange-300 border border-orange-500/20 px-3 py-1 rounded-full text-sm transition">Tailwind CSS</span>
+                        <span class="skill-badge bg-orange-500/10 text-orange-300 border border-orange-500/20 px-3 py-1 rounded-full text-sm transition" >Django</span>
+                    </div>
+                </div>                
+                <div class="glass-card p-6 rounded-xl border border-white/10 group hover:border-green-500/50 transition-all">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center text-green-400 mr-3 shadow-neon-green">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-white font-orbitron">Bases de données</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge bg-green-500/10 text-green-300 border border-green-500/20 px-3 py-1 rounded-full text-sm transition">PostgreSQL</span>
+                        <span class="skill-badge bg-green-500/10 text-green-300 border border-green-500/20 px-3 py-1 rounded-full text-sm transition">MySQL</span>
+                        <span class="skill-badge bg-green-500/10 text-green-300 border border-green-500/20 px-3 py-1 rounded-full text-sm transition">SQLServer</span>
+                    </div>
+                </div>                
+                <div class="glass-card p-6 rounded-xl border border-white/10 group hover:border-indigo-500/50 transition-all">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 flex items-center justify-center text-indigo-400 mr-3 shadow-neon-indigo">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-white font-orbitron">Systèmes & Réseaux</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 px-3 py-1 rounded-full text-sm transition">Admin Serveurs</span>
+                        <span class="skill-badge bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 px-3 py-1 rounded-full text-sm transition">Config Réseaux</span>
+                        <span class="skill-badge bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 px-3 py-1 rounded-full text-sm transition">Sécurité</span>
+                    </div>
+                </div>
+                <div class="glass-card p-6 rounded-xl border border-white/10 group hover:border-yellow-500/50 transition-all">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-yellow-500/20 flex items-center justify-center text-yellow-400 mr-3 shadow-neon-yellow">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-white font-orbitron">Autres</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge bg-yellow-500/10 text-yellow-300 border border-yellow-500/20 px-3 py-1 rounded-full text-sm transition">Git</span>
+                        <span class="skill-badge bg-yellow-500/10 text-yellow-300 border border-yellow-500/20 px-3 py-1 rounded-full text-sm transition">Figma</span>
+                        <span class="skill-badge bg-yellow-500/10 text-yellow-300 border border-yellow-500/20 px-3 py-1 rounded-full text-sm transition">Docker</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="py-20 px-4 bg-gray-100">
+    <section id="projects" class="py-20 px-4 bg-slate-950">
         <div class="container mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-12">Mes <span class="gradient-text">projets</span></h2>
+            <h2 class="text-3xl font-bold text-center mb-12 font-orbitron">Mes <span class="gradient-text">projets</span></h2>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                    <div class="h-48 overflow-hidden">
-                        <img src="image/patient.png" alt="Projet 1" class="w-full h-full object-cover">
+                <div class="glass-card rounded-2xl overflow-hidden border border-white/10 group hover:border-blue-500/30 transition-all duration-500">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="image/patient.png" alt="Projet 1" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 to-transparent opacity-60"></div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Gestion des patients</h3>
-                        <p class="text-gray-600 mb-4">L'application permet aux praticiens et au personnel administratif de suivre efficacement les informations des patients, leurs consultations, leurs rendez-vous, ainsi que l’historique médical.</p>
+                        <h3 class="text-xl font-bold mb-2 text-white font-orbitron">Gestion des patients</h3>
+                        <p class="text-slate-400 mb-4 line-clamp-3">L'application permet aux praticiens et au personnel administratif de suivre efficacement les informations des patients, leurs consultations, leurs rendez-vous.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">PHP</span>
-                            <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs">HTML - CSS</span>
-                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">MySQL</span>
+                            <span class="bg-blue-500/10 text-blue-300 border border-blue-500/20 px-2 py-1 rounded text-xs font-medium">PHP</span>
+                            <span class="bg-purple-500/10 text-purple-300 border border-purple-500/20 px-2 py-1 rounded text-xs font-medium">Tailwind</span>
+                            <span class="bg-green-500/10 text-green-300 border border-green-500/20 px-2 py-1 rounded text-xs font-medium">MySQL</span>
                         </div>
                         <div class="flex space-x-3">
-                            <a href="https://github.com/JeanAime824/hopital" class="text-blue-600 hover:text-blue-800">
-                                <i class="fab fa-github"></i> Code sur github
+                            <a href="https://github.com/JeanAime824/hopital" class="text-blue-400 hover:text-blue-300 flex items-center transition-colors">
+                                <i class="fab fa-github mr-2"></i> Code source
                             </a>
-                            <!-- <a href="#" class="text-blue-600 hover:text-blue-800">
-                                <i class="fas fa-external-link-alt"></i> Live
-                            </a> -->
                         </div>
                     </div>
                 </div>
                 
-                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                    <div class="h-48 overflow-hidden">
-                        <img src="image/vente.jpg" alt="Projet 2" class="w-full h-full object-cover">
+                <div class="glass-card rounded-2xl overflow-hidden border border-white/10 group hover:border-purple-500/30 transition-all duration-500">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="image/vente.jpg" alt="Projet 2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 to-transparent opacity-60"></div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Gestion de vente des matériels informatique</h3>
-                        <p class="text-gray-600 mb-4">Création d'un logiciel de gestion destiné aux boutiques de vente de matériels informatiques. L'application facilite la gestion des stocks, des ventes, des clients et des factures de manière rapide et efficace.</p>
+                        <h3 class="text-xl font-bold mb-2 text-white font-orbitron">Gestion de vente</h3>
+                        <p class="text-slate-400 mb-4 line-clamp-3">Logiciel de gestion destiné aux boutiques de vente de matériels informatiques. Facilite la gestion des stocks, des ventes et des factures.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">VB.net</span>
-                            <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs">SQLServer</span>
+                            <span class="bg-blue-500/10 text-blue-300 border border-blue-500/20 px-2 py-1 rounded text-xs font-medium">VB.net</span>
+                            <span class="bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 px-2 py-1 rounded text-xs font-medium">SQLServer</span>
                         </div>
                         <div class="flex space-x-3">
-                            <a href="https://github.com/JeanAime824/gestion_de_vente" class="text-blue-600 hover:text-blue-800">
-                                <i class="fab fa-github"></i> Code sur github
+                            <a href="https://github.com/JeanAime824/gestion_de_vente" class="text-purple-400 hover:text-purple-300 flex items-center transition-colors">
+                                <i class="fab fa-github mr-2"></i> Code source
                             </a>
-                            <!-- <a href="#" class="text-blue-600 hover:text-blue-800">
-                                <i class="fas fa-external-link-alt"></i> Live
-                            </a> -->
                         </div>
                     </div>
                 </div>
                 
-                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                    <div class="h-48 overflow-hidden">
-                        <img src="image/vehicule.jpg" alt="Projet 3" class="w-full h-full object-cover">
+                <div class="glass-card rounded-2xl overflow-hidden border border-white/10 group hover:border-green-500/30 transition-all duration-500">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="image/vehicule.jpg" alt="Projet 3" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 to-transparent opacity-60"></div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Suivi des véhicules</h3>
-                        <p class="text-gray-600 mb-4">Développement d’un site web de gestion et de suivi des véhicules appartenant à une entreprise privée. L’application permet de centraliser les informations liées à l’entretien, l'utilisation et la disponibilité de chaque véhicule.</p>
+                        <h3 class="text-xl font-bold mb-2 text-white font-orbitron">Suivi des véhicules</h3>
+                        <p class="text-slate-400 mb-4 line-clamp-3">Développement d’un site web de gestion et de suivi des véhicules appartenant à une entreprise privée.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">PHP</span>
-                            <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs">HTML - CSS</span>
-                            <span class="bg-yellow-100 text-red-800 px-2 py-1 rounded-full text-xs">MySQL</span>
+                            <span class="bg-blue-500/10 text-blue-300 border border-blue-500/20 px-2 py-1 rounded text-xs font-medium">PHP</span>
+                            <span class="bg-green-500/10 text-green-300 border border-green-500/20 px-2 py-1 rounded text-xs font-medium">MySQL</span>
                         </div>
                         <div class="flex space-x-3">
-                            <a href="https://github.com/JeanAime824/parc" class="text-blue-600 hover:text-blue-800">
-                                <i class="fab fa-github"></i> Code sur github
+                            <a href="https://github.com/JeanAime824/parc" class="text-green-400 hover:text-green-300 flex items-center transition-colors">
+                                <i class="fab fa-github mr-2"></i> Code source
                             </a>
-                            <!-- <a href="#" class="text-blue-600 hover:text-blue-800">
-                                <i class="fas fa-external-link-alt"></i> Live
-                            </a> -->
                         </div>
                     </div>
                 </div>
             </div>
             
             <div class="text-center mt-12">
-                <a href="https://github.com/JeanAime824" class="px-6 py-3 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-200 transition inline-flex items-center">
-                    <i class="fab fa-github mr-2"></i> Voir plus sur GitHub
+                <a href="https://github.com/JeanAime824" class="px-8 py-3 border border-white/20 text-white rounded-lg font-medium hover:bg-white/10 transition-all inline-flex items-center font-orbitron tracking-wider">
+                    <i class="fab fa-github mr-2"></i> VOIR PLUS SUR GITHUB
                 </a>
             </div>
         </div>
     </section>
 
-    <footer id="contact" class="bg-gray-800 text-white py-8">
-        <div class="text-3xl font-bold text-center mb-8">Contactez-moi</div>
-        <div class="container mx-auto">
-            <div class="flex flex-col md:flex-row md:space-x-8 mb-8">
-                <div class="flex flex-col md:flex-row w-full justify-between px-8 mb-4 md:mb-0">
-                    <div class="w-full md:w-[800px] mb-4 md:mb-0">
-                        <div class="flex items-start mb-4 md:mb-0 w-full">
-                            <div class="text-white mr-4 mt-1">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-medium">Email</h4>
-                                <p>rakotoniainafanomezantsoajeana@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start mb-4 md:mb-0 w-full">
-                            <div class="text-white mr-4 mt-1">
-                                <i class="fas fa-phone-alt"></i>
-                            </div>
-                            <div >
-                                <h4 class="font-medium">Téléphone</h4>
-                                <p>034 77 611 39</p>
-                                <p>033 13 098 12</p>
-                            </div>
-                        </div>
-            
-                        
+    <footer id="contact" class="bg-slate-950 text-white py-12 border-t border-white/5">
+        <div class="text-3xl font-bold text-center mb-12 font-orbitron tracking-widest"><span class="gradient-text">CONTACTEZ</span>-MOI</div>
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <div class="glass-card p-6 rounded-xl border border-white/5 flex items-center">
+                    <div class="w-12 h-12 rounded-lg bg-blue-500/20 flex items-center justify-center text-blue-400 mr-4">
+                        <i class="fas fa-envelope text-xl"></i>
                     </div>
-                    
-                    <div class="flex mb-4 md:mb-0 md:w-auto">
-                        <div class="flex items-start">
-                            <div class="text-white mr-4 mt-1">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-medium">Adresse</h4>
-                                <p>III D 10 Bis Antaniavo</p>
-                                <p>Antananarivo, Madagascar</p>
-                            </div>
-                        </div>
+                    <div>
+                        <h4 class="font-orbitron text-sm text-slate-400">EMAIL</h4>
+                        <p class="text-slate-200 truncate">rakotoniainafanomezantsoajeana@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-xl border border-white/5 flex items-center">
+                    <div class="w-12 h-12 rounded-lg bg-purple-500/20 flex items-center justify-center text-purple-400 mr-4">
+                        <i class="fas fa-phone-alt text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-orbitron text-sm text-slate-400">TÉLÉPHONE</h4>
+                        <p class="text-slate-200">034 77 611 39 / 033 13 098 12</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-xl border border-white/5 flex items-center">
+                    <div class="w-12 h-12 rounded-lg bg-indigo-500/20 flex items-center justify-center text-indigo-400 mr-4">
+                        <i class="fas fa-map-marker-alt text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-orbitron text-sm text-slate-400">ADRESSE</h4>
+                        <p class="text-slate-200">Antananarivo, Madagascar</p>
                     </div>
                 </div>
             </div>
-            
-            
     
-            <div class="mt-6 text-center">
-                <div class="flex justify-center space-x-4">
-                    <a href="https://www.linkedin.com/in/jean-aim%C3%A9-rakotoniaina-0586392a4/" class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-opacity-30 transition">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://github.com/JeanAime824" class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-opacity-30 transition">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.facebook.com/profile.php?viewas=100000686899395&id=61560337090398" class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-opacity-30 transition">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                </div>
+            <div class="flex justify-center space-x-6">
+                <a href="https://www.linkedin.com/in/jean-aim%C3%A9-rakotoniaina-0586392a4/" class="w-12 h-12 rounded-full glass-card border border-white/10 flex items-center justify-center hover:border-blue-500/50 transition-all text-xl">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/JeanAime824" class="w-12 h-12 rounded-full glass-card border border-white/10 flex items-center justify-center hover:border-purple-500/50 transition-all text-xl">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?viewas=100000686899395&id=61560337090398" class="w-12 h-12 rounded-full glass-card border border-white/10 flex items-center justify-center hover:border-blue-400/50 transition-all text-xl">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
+            <div class="text-center mt-12 text-slate-500 text-sm font-orbitron">
+                &copy; 2025 JEAN AIMÉ. ALL RIGHTS RESERVED.
             </div>
         </div>
-    </footer>        
+    </footer>
 
     <script src="script.js"></script>
 </body>
