@@ -45,17 +45,23 @@
         </div>
     </header>
 
-    <section class="py-20 px-4 relative overflow-hidden">
-        <div class="absolute -top-24 -left-24 w-96 h-96 bg-blue-600/20 rounded-full blur-[100px]"></div>
-        <div class="absolute top-1/2 -right-24 w-96 h-96 bg-purple-600/20 rounded-full blur-[100px]"></div>
+    <section class="py-20 px-4 relative overflow-hidden min-h-[90vh] flex items-center">
+        <div class="glow-blob w-[500px] h-[500px] bg-blue-600 top-[-10%] left-[-10%]"></div>
+        <div class="glow-blob w-[400px] h-[400px] bg-purple-600 bottom-[10%] right-[-5%]"></div>
 
         <div class="container mx-auto flex flex-col md:flex-row items-center relative z-10">
             <div class="md:w-1/2 mb-12 md:mb-0">
-                <h1 class="text-4xl md:text-6xl font-bold mb-4 font-orbitron">Bonjour, je suis <span class="gradient-text">Jean Aimé</span></h1>
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 font-orbitron">Bonjour, je suis <br><span class="gradient-text typing-cursor" id="typing-text"></span></h1>
                 <h2 class="text-2xl md:text-3xl font-medium text-slate-400 mb-6 tracking-wide">Développeur Web et Logiciel</h2>
                 <p class="text-lg text-slate-300 mb-8 max-w-xl">Étudiant passionné en informatique, toujours à la recherche de nouvelles compétences et de défis du développement logiciel et le domaine du backend pour le développement web. </p>
                 <div class="flex space-x-4">
                     <a href="image/CV_Fanomezantsoa Jean Aimé_RAKOTONIAINA.pdf" class="px-6 py-3 gradient-bg text-white rounded-lg font-medium hover:opacity-90 transition hover:scale-105" target="_blank">Télécharger mon CV</a>
+                </div>
+            </div>
+
+            <div class="absolute bottom-10 left-1/2 -translate-x-1/2 hidden md:block">
+                <div class="w-6 h-10 border-2 border-slate-500 rounded-full flex justify-center p-1">
+                    <div class="w-1 h-2 bg-slate-500 rounded-full animate-bounce"></div>
                 </div>
             </div>
             <div class="md:w-1/2 flex justify-center">
@@ -69,7 +75,7 @@
         </div>
     </section>
 
-    <section id="about" class="py-20 px-4 bg-slate-900/50">
+    <section id="about" class="py-20 px-4 bg-slate-900/50 reveal">
         <div class="container mx-auto">
             <h2 class="text-3xl font-bold text-center mb-12 font-orbitron">À <span class="gradient-text">propos</span> de moi</h2>
             
@@ -131,7 +137,7 @@
         </div>
     </section>
 
-    <section id="experience" class="py-20 px-4 bg-slate-950">
+    <section id="experience" class="py-20 px-4 bg-slate-950 reveal">
         <div class="container mx-auto">
             <h2 class="text-3xl font-bold text-center mb-12 font-orbitron">Mon <span class="gradient-text">expérience</span> professionnelle</h2>
 
@@ -155,7 +161,7 @@
         </div>
     </section>
 
-    <section id="skills" class="py-20 px-4 bg-slate-900/50">
+    <section id="skills" class="py-20 px-4 bg-slate-900/50 reveal">
         <div class="container mx-auto">
             <h2 class="text-3xl font-bold text-center mb-12 font-orbitron">Mes <span class="gradient-text">compétences</span></h2>
             
@@ -195,9 +201,10 @@
                         <h3 class="font-bold text-lg text-white font-orbitron">IA</h3>
                     </div>
                     <div class="flex flex-wrap gap-2">
-                        <span class="skill-badge bg-red-500/10 text-red-300 border border-red-500/20 px-3 py-1 rounded-full text-sm transition">Machine Learning</span>
-                        <span class="skill-badge bg-red-500/10 text-red-300 border border-red-500/20 px-3 py-1 rounded-full text-sm transition" >Deep Learning</span>
-                        <span class="skill-badge bg-red-500/10 text-red-300 border border-red-500/20 px-3 py-1 rounded-full text-sm transition" >NLP</span>
+                        <span class="skill-badge bg-red-500/10 text-red-300 border border-red-500/20 px-3 py-1 rounded-full text-sm transition">Intégration IA via API</span>
+                        <span class="skill-badge bg-red-500/10 text-red-300 border border-red-500/20 px-3 py-1 rounded-full text-sm transition">Automatisation IA</span>
+                        <span class="skill-badge bg-red-500/10 text-red-300 border border-red-500/20 px-3 py-1 rounded-full text-sm transition">Analyse de données IA</span>
+                        <span class="skill-badge bg-red-500/10 text-red-300 border border-red-500/20 px-3 py-1 rounded-full text-sm transition">Déploiement IA multi-environnements</span>
                     </div>
                 </div>
                 <div class="glass-card p-6 rounded-xl border border-white/10 group hover:border-orange-500/50 transition-all">
@@ -210,6 +217,8 @@
                     <div class="flex flex-wrap gap-2">
                         <span class="skill-badge bg-orange-500/10 text-orange-300 border border-orange-500/20 px-3 py-1 rounded-full text-sm transition">Tailwind CSS</span>
                         <span class="skill-badge bg-orange-500/10 text-orange-300 border border-orange-500/20 px-3 py-1 rounded-full text-sm transition" >Django</span>
+                        <span class="skill-badge bg-orange-500/10 text-orange-300 border border-orange-500/20 px-3 py-1 rounded-full text-sm transition">Flutter</span>
+                        <span class="skill-badge bg-orange-500/10 text-orange-300 border border-orange-500/20 px-3 py-1 rounded-full text-sm transition">React JS</span>
                     </div>
                 </div>                
                 <div class="glass-card p-6 rounded-xl border border-white/10 group hover:border-green-500/50 transition-all">
@@ -224,7 +233,7 @@
                         <span class="skill-badge bg-green-500/10 text-green-300 border border-green-500/20 px-3 py-1 rounded-full text-sm transition">MySQL</span>
                         <span class="skill-badge bg-green-500/10 text-green-300 border border-green-500/20 px-3 py-1 rounded-full text-sm transition">SQLServer</span>
                     </div>
-                </div>                
+                </div>
                 <div class="glass-card p-6 rounded-xl border border-white/10 group hover:border-indigo-500/50 transition-all">
                     <div class="flex items-center mb-4">
                         <div class="w-10 h-10 rounded-full bg-indigo-500/20 flex items-center justify-center text-indigo-400 mr-3 shadow-neon-indigo">
@@ -255,7 +264,7 @@
         </div>
     </section>
 
-    <section id="projects" class="py-20 px-4 bg-slate-950">
+    <section id="projects" class="py-20 px-4 bg-slate-950 reveal">
         <div class="container mx-auto">
             <h2 class="text-3xl font-bold text-center mb-12 font-orbitron">Mes <span class="gradient-text">projets</span></h2>
             

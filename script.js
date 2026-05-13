@@ -1,57 +1,66 @@
-const mobileMenuButton = document.getElementById('mobile-menu-button');
-const mobileMenu = document.getElementById('mobile-menu');
+document.addEventListener('DOMContentLoaded', () => {
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
 
-mobileMenuButton.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-});
+    if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    }
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        
-        const targetId = this.getAttribute('href');
-        const targetElement = document.querySelector(targetId);
-        
-        if (targetElement) {
-            mobileMenu.classList.add('hidden');
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            if (href === '#') return;
             
-            window.scrollTo({
-                top: targetElement.offsetTop - 80,
-                behavior: 'smooth'
-            });
-        }
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu if open
+                if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            }
+        });
     });
-});
 
-const contactForm = document.getElementById('contact-form');
+    // Reveal on scroll
+    const reveal = () => {
+        const reveals = document.querySelectorAll('.reveal');
+        reveals.forEach(el => {
+            const windowHeight = window.innerHeight;
+            const elementTop = el.getBoundingClientRect().top;
+            const elementVisible = 150;
+            if (elementTop < windowHeight - elementVisible) {
+                el.classList.add('active');
+            }
+        });
+    };
 
-contactForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const subject = document.getElementById('subject').value;
-    const message = document.getElementById('message').value;
-    
-    alert(`Merci pour votre message, ${name}! Je vous répondrai dès que possible.`);
-    
-    contactForm.reset();
-});
+    window.addEventListener('scroll', reveal);
+    reveal(); // Initial check
 
-window.addEventListener('scroll', revealOnScroll);
+    // Typing effect
+    const typingText = document.getElementById('typing-text');
+    const text = "Jean Aimé";
+    let index = 0;
 
-function revealOnScroll() {
-    const elements = document.querySelectorAll('.project-card, .skill-badge');
-    const windowHeight = window.innerHeight;
-    
-    elements.forEach(element => {
-        const elementPosition = element.getBoundingClientRect().top;
-        const elementVisible = 150;
-        
-        if (elementPosition < windowHeight - elementVisible) {
-            element.classList.add('fade-in');
+    const type = () => {
+        if (index < text.length) {
+            typingText.innerHTML += text.charAt(index);
+            index++;
+            setTimeout(type, 150);
+        } else {
+            typingText.classList.remove('typing-cursor');
         }
-    });
-}
+    };
 
-revealOnScroll();
+    if (typingText) {
+        setTimeout(type, 500);
+    }
+});
